@@ -49,7 +49,17 @@ public class UserRegistration {
     public static void main(String[] args) {
         System.out.println("First Name :- "+firstName("Gopal"));
         System.out.println("Last Name :- "+lastName("Das"));
-        System.out.println("Email :- "+email("gopalkrdas.1997@gmail.com"));
+
+        System.out.println("Email :- "+email("gopalkda.1997@gmail.com"));
+        System.out.println("Email :- "+email("abc@yahoo.com"));
+        System.out.println("Email :- "+email("abc-100@yahoo.com"));
+        System.out.println("Email :- "+email("abc.100@yahoo.com"));
+        System.out.println("Email :- "+email("abc111@abc.com"));
+        System.out.println("Email :- "+email("abc@gmail.com.com"));
+        System.out.println("Email :- "+email("abc+100@gmail.com"));
+        System.out.println("Email :- "+email("abc@1.com"));
+        System.out.println("Email :- "+email("abc.100@abc.com.au"));
+
         System.out.println("Mobile Number :- "+mobileNumber("+91 8757538752"));
         System.out.println("Password :- "+password("G@343u873"));
     }
