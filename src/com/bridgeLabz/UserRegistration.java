@@ -1,5 +1,7 @@
 package com.bridgeLabz;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -8,7 +10,8 @@ public class UserRegistration {
     static String lastNameRegex = "^[A-Z][A-Za-z]{2,}$";
     static String emailRegex = "^([a-zA-Z\\.]+)([a-zA-Z0-9\\.\\-+]+)@([a-zA-Z0-9\\._]+)\\.([a-z]{2,8})(\\.[a-z]{2,8})?$";
     static String mobileNumberRegex = "^(\\+[0-9]{1,3}[- ]?)?[0-9]{10}$";
-    static String passwordRegex = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$";   //--> \\d = 0-9
+   // static String passwordRegex = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$";   //--> \\d = 0-9
+    static String passwordRegex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$";
     static Pattern pattern;
     static Matcher matcher;
 
@@ -43,7 +46,7 @@ public class UserRegistration {
         System.out.println("Last Name :- "+lastName("Das"));
         System.out.println("Email :- "+email("gopalkrdas.1997@gmail.com"));
         System.out.println("Mobile Number :- "+mobileNumber("+91 8757538752"));
-        System.out.println("Password :- "+password("2343u873"));
+        System.out.println("Password :- "+password("G343u873"));
     }
 
 
